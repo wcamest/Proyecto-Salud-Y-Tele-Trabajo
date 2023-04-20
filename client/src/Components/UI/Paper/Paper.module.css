@@ -1,0 +1,11 @@
+.paper{
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+}
+
+.inner_shadow{
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .4);
+}
