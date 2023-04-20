@@ -2,11 +2,11 @@ import PageBackground from "../../Components/PageBackground/PageBackground";
 import Button from "../../Components/UI/Button/Button";
 import InputBox from "../../Components/UI/InputBox/InputBox";
 import Paper from "../../Components/UI/Paper/Paper";
-import style from "./App.module.css";
+import style from "./Home.module.css";
 
-function App() {
+function Home() {
   return (
-    <div className={style.app}>
+    <div className={style.home}>
       <PageBackground hsl_color={{ hue: 220, saturation: 100, lightness: 90 }} />
       <div style={{ display: "flex", flexDirection: "column", padding: "50px", width: "300px" }}>
         <Button hsl_color={{ hue: 360, saturation: 100, lightness: 90 }} dark_text={true}>Click Me</Button>
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App
+export default Home
