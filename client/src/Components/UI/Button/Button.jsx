@@ -3,7 +3,7 @@ import button_style from "./Button.module.css";
 
 const Button = (props) => {
 
-    const { style, hsl_color, dark_text } = props;
+    const { className, style, hsl_color, dark_text } = props;
     const { onClick } = props;
 
     const [mouse_mode, set_mouse_mode] = useState(null);
@@ -45,7 +45,7 @@ const Button = (props) => {
         onMouseUp={() => { set_mouse_mode("hover") }}
         onClick={onClick}
         style={get_button_style()}
-        className={button_style.button}>
+        className={(className ? className + " " : "") + button_style.button}>
         {props.children}
     </button>
 }
