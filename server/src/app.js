@@ -22,6 +22,10 @@ server.use((req, res, next) => {
   next();
 });
 
+server.get("/", (req, res) => {
+  res.json({ info: "Server Cargado con exito" });
+});
+
 server.use('/', routes);
 
 // Error catching endware.
